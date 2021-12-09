@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de biens immobiliers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div id="back">
+        <nav class="menu">
+            <div class="logo">
+                <img src="/home-removebg-preview.png" alt="logo" width="100px" height="100px">
+            </div>
+<ul>
+    
+    <li class="active"><a href="#">Home</a></li>
+    <li ><a href="#">About Us</a></li>
+    <li ><a href="#">Services</a></li>
+    <li ><a href="#">Contact</a></li>
+    <li ><a href="#">My profile</a></li>
+</ul>
+        
+
+       </nav>
+<h2>Search for a property</h2>
+<form>
+    <div id="container">
+      
+        <div>
+            <label for="ville">City :</label><br>
+            <input list="villes" name="ville" id="ville" placeholder="Please choose a city" class="input">
+            <datalist id="villes">
+                <option value="Casa">
+                <option value="Rabat">
+                <option value="El jadida">
+                <option value="Youssoufia">
+                <option value="Marrakech">
+            </datalist>
+        </div>
+        
+        <div>
+            <label for="Type">Type :</label><br>
+            <input list="types" name="type" id="type" placeholder="Please choose a type of property" class="input">
+            <datalist id="types">
+                <option value="Maison & villa mas chalet">
+                <option value="Appartement">
+                <option value="Terrain">
+                <option value="Maison de constructeur">
+                <option value="Parking/Garage">
+            </datalist>
+        </div>
+        
+        <div class="child">
+            <label for="chambre">Bedroom :</label><br>
+            <input type="number" id="chambre" name="chambre" class="input">
+        </div>
+        <div class="child">
+            <label for="surfac">surface (m²) :</label><br>
+            <input type="number" id="surface" name="surface" class="input" placeholder="(m²)"> 
+        </div>
+
+        <fieldset>
+            <legend>Price (DH) : </legend>
+            <input type="number" id="prixMIN" name="prix" placeholder="Min" class="input">
+            <input type="number" id="prixMAX" name="prix" placeholder="Max" class="input">
+          </fieldset>
+
+          <fieldset id="f">
+            <legend>Type of research :</legend>
+            <div class="typeR">
+            <input type="radio" id="R1" name="R" > 
+            <label for="R1">Sale </label>  
+            </div>
+            <div class="typeR">
+            <input type="radio" id="R2" name="R" >
+            <label for="R2">Rental </label>
+            </div>
+        </fieldset>
+        <div class="btn">
+        <input type="submit" value="Search" id="btn" class="input" >
+        </div>
+    </div>
+</div>
+</form>
+</body>
+
+</html>
